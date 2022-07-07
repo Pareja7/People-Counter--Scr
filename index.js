@@ -1,16 +1,31 @@
 
+
+let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
-console.log(countEl)
+//console.log(countEl)
 let count = 0
 
 
 function increment(){
   //console.log("The button was clicked")
   //console.log(count + 1)
-  count = count + 1
+  count += 1 //same as count= count + 1
   countEl.innerText = count
+}
+  function save() {
+   let previousCount = count + " - "
+    
+    saveEl.innerText += previousCount
+
+    
+    console.log(count)
+
+
+    
+  }
+ 
   
-}//countEl ties Count in browser (h2) to the increment btn and onClick event listener -increment function that tells it to add one to the current count upon each click
+//countEl ties Count in browser (h2) to the increment btn and onClick event listener -increment function that tells it to add one to the current count upon each click
 
 //console.log(count)
 //let lap1 = 34
